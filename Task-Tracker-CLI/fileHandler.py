@@ -1,31 +1,41 @@
 from pathlib import Path
 import json
+import re
 
 class FileHandler:
-    @staticmethod
-    def checkIfFileExists(filePath, fileType):
-        file = Path(filePath)
+    def __init__(self, filePath):
+        self.filePath = filePath
+        self.fileType = self.getFileType()
+
+    def getFileType(self):
+        pattern = r"\.([a-zA-Z0-9]+)$"
+        match = re.search(pattern,self.filePath)
+        if match:
+            return match.group(1)
+        else:
+            print("Invalid File Path")
+    
+    def checkIfFileExists(self):
+        file = Path(self.filePath)
         if not file.exists():
-            with open(f"Tasks.{fileType.lower()}", "x") as f:
+            with open(f"Tasks.{self.fileType.lower()}", "x") as f:
                 f.write("{ }")
                 return True
         else:
             return False
     
-    @staticmethod
-    def getFileData(filePath, fileType):
-        if FileHandler.checkIfFileExists(filePath, fileType) == False:
-            with open(filePath, 'r') as file:
+    def getFileData(self):
+        if self.checkIfFileExists() == False:
+            with open(self.filePath, 'r') as file:
                 return json.load(file)
         else:
             return { }
 
-    @staticmethod
-    def overwriteFile(filePath, fileType, data):
-        if FileHandler.checkIfFileExists(filePath, fileType) == False:
-            with open(filePath, "w") as f:
+    def overwriteFile(self, data):
+        if self.checkIfFileExists() == False:
+            with open(self.filePath, "w") as f:
                 json.dump(data, f)
                 return f"File Succesfully OverWrited"
         else:
-            return f"File: {filePath} Not Found"
+            return f"File: {self.filePath} Not Found"
     

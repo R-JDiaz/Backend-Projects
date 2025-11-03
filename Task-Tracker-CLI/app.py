@@ -15,8 +15,12 @@ def clear():
         os.system('cls' if os.name == 'nt' else 'clear')
 
 def main(filePath):
+    fHandler = FileHandler(filePath)
+    print(fHandler.filePath)
+    print(fHandler.fileType)
+
     def save():
-        FileHandler.overwriteFile(filePath, fileType, manager.tasks)
+        fHandler.overwriteFile(manager.tasks)
         print("Saved Succesfully")
 
     def valueGetter(argIndex):
@@ -26,9 +30,9 @@ def main(filePath):
     
     fileType = "json"
 
-    tasks = FileHandler.getFileData(filePath, fileType)
+    tasks = fHandler.getFileData()
     manager = TaskManager(tasks)
-    FileHandler.checkIfFileExists(filePath, fileType)
+    fHandler.checkIfFileExists()
     clear()
     
 
