@@ -24,11 +24,12 @@ def main(filePath):
         print("Saved Succesfully")
 
     def valueGetter(argIndex):
-        return " ".join(args[argIndex:len(args)])
+        words = args[argIndex:len(args)]
+        return " ".join(words)
+        
+        
 
     args = sys.argv
-    
-    fileType = "json"
 
     tasks = fHandler.getFileData()
     manager = TaskManager(tasks)
@@ -43,25 +44,24 @@ def main(filePath):
     command = args[1]
     
     if command == "add" :
-        if manager.checkIfExist(valueGetter(3)) == False:
-            print(manager.createTask(valueGetter(3)))
+        if manager.checkIfExist(valueGetter(2)) == False:
+            print(manager.createTask(valueGetter(2)))
+            print(valueGetter(2))
             save()
-            print(" ")
         else:
             print("Task already CREATED")
             
     
     elif command == "delete":
-        print(manager.deleteTask(valueGetter(3)))
+        print(manager.deleteTask(valueGetter(2)))
         save()
 
     elif command == "update":
-        print(manager.updateTask(args[2], valueGetter(3)))
-        print(manager.tasks)
+        print(manager.updateTaskAttribute(args[2],"definition", valueGetter(3)))
         save()
 
     elif command == "mark":
-        print(manager.updateTaskStatus(args[3], args[2]))
+        print(manager.updateTaskAttribute(args[3],"status", args[2]))
         save()
 
     elif command == "list" and len(args) == 2:

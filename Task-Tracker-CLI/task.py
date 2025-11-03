@@ -5,7 +5,11 @@ class TaskManager:
         self.tasks = tasks
 
     def checkIfExist(self, description):
+        words = description.split()
         for k in self.tasks:
+            for w in words:
+                if w in self.tasks[k]['description']:
+                    return True
             if description in self.tasks[k]['description']:
                 return True
         return False
@@ -27,18 +31,14 @@ class TaskManager:
         else:
             return f"TASK ID: {id} NOT FOUND"
 
-    def updateTask(self, id, definition):
+    def updateTaskAttribute(self, id, attribute, value):
         if id in self.tasks:
-            self.tasks[id]['description'] = definition
+            self.tasks[id][attribute] = value
+            curDateTime = datetime.now()
+            dateString = curDateTime.strftime("%Y-%m-%d %H:%M:%S")
+            self.tasks[id]["updatedAt"] = dateString
             return 'Task Updated Succesfully'
         else:
-            return 'Id not FOUND'
-
-    def updateTaskStatus(self, id, status): 
-        if id in self.tasks:
-            self.tasks[id]['status'] = status
-            return 'Task updated Succesfully'
-        else: 
             return 'Id not FOUND'
 
     def getTasks(self):
@@ -46,6 +46,8 @@ class TaskManager:
                 print(f"Id: {task}")
                 print(f"Task: {self.tasks[task]['description']}")
                 print(f"Status: {self.tasks[task]['status']}")
+                print(f"UpdateAt: {self.tasks[task]['updatedAt']}")
+                print(f"CreatedAt: {self.tasks[task]['createdAt']}")
                 print(" ")
 
     def getTasksByStatus(self, status):
@@ -56,6 +58,11 @@ class TaskManager:
                 print(f"Status: {self.tasks[task]['status']}")
                 print(" ")
 
+    def getIdByDefinition(self, definition):
+        for k,v in self.tasks.items():
+            if self.tasks[v]["definition"] == definition:
+                return k
+        
     def toDict(self):
         return self.tasks
 
