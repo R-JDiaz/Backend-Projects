@@ -35,7 +35,6 @@ class TaskManager:
             return 'Id not FOUND'
 
     def getTasks(self):
-        print(self.tasks)
         for task in self.tasks:
                 print(f"Id: {task}")
                 print(f"Task: {self.tasks[task]['description']}")
