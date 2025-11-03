@@ -11,13 +11,16 @@ def showInstructions():
     print("  python app.py list <status>[optional]")
     print("  python app.py update <task_number> <updated_definition>")
 
+def clear():
+        os.system('cls' if os.name == 'nt' else 'clear')
+
 def main(filePath):
     def save():
         FileHandler.overwriteFile(filePath, fileType, manager.tasks)
         print("Saved Succesfully")
 
-    def clear():
-        os.system('cls' if os.name == 'nt' else 'clear')
+    def valueGetter(argIndex):
+        return " ".join(args[argIndex:len(args)])
 
     args = sys.argv
     
@@ -36,15 +39,20 @@ def main(filePath):
     command = args[1]
     
     if command == "add" :
-        print(manager.createTask(str(args[2])))
-        save()
+        if manager.checkIfExist(valueGetter(3)) == False:
+            print(manager.createTask(valueGetter(3)))
+            save()
+            print(" ")
+        else:
+            print("Task already CREATED")
+            
     
     elif command == "delete":
-        print(manager.deleteTask(args[2]))
+        print(manager.deleteTask(valueGetter(3)))
         save()
 
     elif command == "update":
-        print(manager.updateTask(args[2], " ".join(args[3:len(args)])))
+        print(manager.updateTask(args[2], valueGetter(3)))
         print(manager.tasks)
         save()
 
@@ -53,7 +61,6 @@ def main(filePath):
         save()
 
     elif command == "list" and len(args) == 2:
-        
         manager.getTasks()
     
     elif command == "list" and len(args) == 3:

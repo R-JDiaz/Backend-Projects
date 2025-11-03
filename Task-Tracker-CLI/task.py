@@ -4,21 +4,28 @@ class TaskManager:
     def __init__(self, tasks):
         self.tasks = tasks
 
+    def checkIfExist(self, description):
+        for k in self.tasks:
+            if description in self.tasks[k]['description']:
+                return True
+        return False
+    
     def createTask(self, description, status="todo"): 
         curDateTime = datetime.now()
         dateString = curDateTime.strftime("%Y-%m-%d %H:%M:%S")
         newTask = Task(max(len(self.tasks) + 1, 0), description, status, dateString, dateString)
         self.tasks[newTask.id] = {"status" : newTask.status, 
-                                  "description" : newTask.description, 
-                                  "createdAt" : newTask.createdAt, 
-                                  "updatedAt" : newTask.updatedAt}
-        return f"Task added succesfully (ID: {newTask.id})"
+                                "description" : newTask.description, 
+                                "createdAt" : newTask.createdAt, 
+                                "updatedAt" : newTask.updatedAt}
+        return 'Created Succesfully'
     
     def deleteTask(self,id):
         if id in self.tasks.keys():
             self.tasks.pop(id)
+            return f"TASK ID: {id} DELETED SUCCESFULLY"
         else:
-            print(f"TASK ID: {id} NOT FOUND")
+            return f"TASK ID: {id} NOT FOUND"
 
     def updateTask(self, id, definition):
         if id in self.tasks:
