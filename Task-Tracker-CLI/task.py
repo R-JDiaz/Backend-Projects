@@ -19,9 +19,20 @@ class TaskManager:
             self.tasks.pop(id)
         else:
             print(f"TASK ID: {id} NOT FOUND")
-    
+
+    def updateTask(self, id, definition):
+        if id in self.tasks:
+            self.tasks[id]['definition'] = definition
+            return 'Task Updated Succesfully'
+        else:
+            return 'Id not FOUND'
+
     def updateTaskStatus(self, id, status): 
-        self.tasks[id]['status'] = status
+        if id in self.tasks:
+            self.tasks[id]['status'] = status
+            return 'Task updated Succesfully'
+        else: 
+            return 'Id not FOUND'
 
     def getTasks(self):
         for task in self.tasks:
@@ -29,7 +40,6 @@ class TaskManager:
                 print(f"Task: {self.tasks[task]['description']}")
                 print(f"Status: {self.tasks[task]['status']}")
                 print(" ")
-
 
     def getTasksByStatus(self, status):
         for task in self.tasks:

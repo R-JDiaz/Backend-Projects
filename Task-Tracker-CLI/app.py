@@ -1,7 +1,15 @@
 import sys
 import os
-from task import Task, TaskManager
+from task import TaskManager
 from fileHandler import FileHandler
+
+def showInstructions():
+    print("Usage:")
+    print("  python app.py add <task>")
+    print("  python app.py delete <task_number>")
+    print("  python app.py mark <status> <number>")
+    print("  python app.py list <status>[optional]")
+    print("  python app.py update <task_number> <updated_definition>")
 
 def main(filePath):
     def save():
@@ -22,20 +30,21 @@ def main(filePath):
     
 
     if len(args) < 2:
-        print("Usage:")
-        print("  python app.py add <task>")
-        print("  python app.py delete <task_number>")
-        print("  python app.py mark <status> <number>")
-        print("  python app.py list <status>[optional]")
+        showInstructions()
         return
     
     command = args[1]
+    
     if command == "add" :
         print(manager.createTask(str(args[2])))
         save()
     
     elif command == "delete":
         print(manager.deleteTask(args[2]))
+        save()
+
+    elif command == "update":
+        print(manager.updateTask(args[2], args[3:]))
         save()
 
     elif command == "mark":
