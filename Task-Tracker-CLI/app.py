@@ -44,7 +44,8 @@ def main(filePath):
         save()
 
     elif command == "update":
-        print(manager.updateTask(args[2], args[3:]))
+        print(manager.updateTask(args[2], " ".join(args[3:len(args)])))
+        print(manager.tasks)
         save()
 
     elif command == "mark":
@@ -52,6 +53,7 @@ def main(filePath):
         save()
 
     elif command == "list" and len(args) == 2:
+        
         manager.getTasks()
     
     elif command == "list" and len(args) == 3:

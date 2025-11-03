@@ -22,7 +22,7 @@ class TaskManager:
 
     def updateTask(self, id, definition):
         if id in self.tasks:
-            self.tasks[id]['definition'] = definition
+            self.tasks[id]['description'] = definition
             return 'Task Updated Succesfully'
         else:
             return 'Id not FOUND'
@@ -35,6 +35,7 @@ class TaskManager:
             return 'Id not FOUND'
 
     def getTasks(self):
+        print(self.tasks)
         for task in self.tasks:
                 print(f"Id: {task}")
                 print(f"Task: {self.tasks[task]['description']}")
