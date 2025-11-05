@@ -22,16 +22,18 @@ def request_data(location, date1=None, date2=None):
             response = format_data(requests.get(url).json())
             print(cache.set_cache(url, json.dumps(response)))
             print(url)
-            print(response)
             print("DATA FROM API SERVER")
+            return response
+            
         except requests.exceptions.HTTPError as httpError:
             print(f"HTTP ERROR: {httpError}")
         except Exception as error:
             print(f"Error: {error}")
             traceback.print_exc()
     else:
-        print("DATA FROM CACHE")
-        print(cached_data)
+        if isinstance(cached_data, bytes):
+            cached_data = cached_data.decode("utf-8")
+        return json.loads(cached_data)
 
 if __name__ == "__main__":
     location = "Pandi, Philippines"
