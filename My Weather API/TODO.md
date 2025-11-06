@@ -7,7 +7,7 @@ to do:
 -windspeed 
 
 SOLUTION:
-IN ORDER TO GET THE NEED DATA YOU HAVE TO ACCESS THE DICTIONARY INSIDE THE DAYS, BUT FOR NOW LETS JUST ACCESS THE CONVENIENT TO ACCESS DATAS
+IN ORDER TO GET THE DATA NEEDED YOU HAVE TO ACCESS THE DICTIONARY INSIDE THE DAYS, BUT FOR NOW LETS JUST ACCESS THE CONVENIENT TO ACCESS DATAS
 
 2.[x] enhance the caching, use exp
 
@@ -15,21 +15,24 @@ IN ORDER TO GET THE NEED DATA YOU HAVE TO ACCESS THE DICTIONARY INSIDE THE DAYS,
 
 3.a [x] learn how to deploy in flask
 
-3.b [] learn why the flask not getting the locaion value, does it require it to show in url
+3.b [x] learn why the flask not getting the locaion value, does it require it to show in url
 
-4. [] understand how to add the response's data uin url like location and date
+4. [x] understand how to add the response's data uin url like location and date
 
-4.b [] understand how the url is connected in the data that were getting
+4.b [x] understand how the url is connected in the data that were getting
+
+ANSWER(3,4): 
+THE FLASK GET THE DATA FROM THE INPUT URL USING THE PORT 5000 AND THE REQUEST.ARGS.GET(DATA) THEN PASS IT IN THE API PROCESSING FUNCTION
 
 5. [x] understand how logger works
 
 problems:
-1.[x] unable to check what kind of error
+[x] unable to check what kind of error
 SOLUTION: 
 USE TRACEBACK
-asdasd
 
-[]  URL Encoding: Encode location in URLs to handle spaces or special characters.
+
+[x]  URL Encoding: Encode location in URLs to handle spaces or special characters. (no need)
 
 [] Use requests.raise_for_status(): Ensure HTTP errors (4xx/5xx) are caught before .json()
 

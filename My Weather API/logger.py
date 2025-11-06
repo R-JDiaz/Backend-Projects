@@ -1,4 +1,5 @@
-import logging 
+from logging.handlers import TimedRotatingFileHandler
+import logging  
 
 def setup_logger(log_File, log_type ):
     logging.basicConfig(

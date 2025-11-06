@@ -1,122 +1,87 @@
-2025-11-06 17:21:58,357 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2025-11-06 18:13:27,117 - INFO -  * Restarting with stat
+2025-11-06 18:16:56,893 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
-2025-11-06 17:21:58,358 - INFO - [33mPress CTRL+C to quit[0m
-2025-11-06 17:21:58,360 - INFO -  * Restarting with stat
-2025-11-06 17:21:59,095 - WARNING -  * Debugger is active!
-2025-11-06 17:21:59,099 - INFO -  * Debugger PIN: 621-942-329
-2025-11-06 17:22:01,244 - INFO - 127.0.0.1 - - [06/Nov/2025 17:22:01] "[33mGET / HTTP/1.1[0m" 404 -
-2025-11-06 17:22:19,187 - INFO - 127.0.0.1 - - [06/Nov/2025 17:22:19] "GET /weather HTTP/1.1" 200 -
-2025-11-06 17:22:31,501 - INFO -  * Detected change in 'c:\\Users\\rj\\Documents\\Coding Projects\\Backend-Projects\\My Weather API\\request_data.py', reloading
-2025-11-06 17:22:31,672 - INFO -  * Restarting with stat
-2025-11-06 17:22:32,496 - WARNING -  * Debugger is active!
-2025-11-06 17:22:32,500 - INFO -  * Debugger PIN: 621-942-329
-2025-11-06 17:22:36,575 - INFO -  * Detected change in 'c:\\Users\\rj\\Documents\\Coding Projects\\Backend-Projects\\My Weather API\\request_data.py', reloading
-2025-11-06 17:22:36,695 - INFO -  * Restarting with stat
-2025-11-06 17:22:37,715 - WARNING -  * Debugger is active!
-2025-11-06 17:22:37,719 - INFO -  * Debugger PIN: 621-942-329
-2025-11-06 17:22:44,908 - INFO - 127.0.0.1 - - [06/Nov/2025 17:22:44] "GET /weather HTTP/1.1" 200 -
-2025-11-06 17:23:56,539 - INFO -  * Detected change in 'c:\\Users\\rj\\Documents\\Coding Projects\\Backend-Projects\\My Weather API\\app.py', reloading
-2025-11-06 17:23:56,705 - INFO -  * Restarting with stat
-2025-11-06 17:23:57,489 - WARNING -  * Debugger is active!
-2025-11-06 17:23:57,493 - INFO -  * Debugger PIN: 621-942-329
-2025-11-06 17:24:25,798 - INFO -  * Detected change in 'c:\\Users\\rj\\Documents\\Coding Projects\\Backend-Projects\\My Weather API\\request_data.py', reloading
-2025-11-06 17:24:25,899 - INFO -  * Restarting with stat
-2025-11-06 17:24:26,683 - WARNING -  * Debugger is active!
-2025-11-06 17:24:26,687 - INFO -  * Debugger PIN: 621-942-329
-2025-11-06 17:24:39,845 - INFO -  * Detected change in 'c:\\Users\\rj\\Documents\\Coding Projects\\Backend-Projects\\My Weather API\\request_data.py', reloading
-2025-11-06 17:24:39,978 - INFO -  * Restarting with stat
-2025-11-06 17:24:40,764 - WARNING -  * Debugger is active!
-2025-11-06 17:24:40,770 - INFO -  * Debugger PIN: 621-942-329
-2025-11-06 17:24:44,835 - INFO -  * Detected change in 'c:\\Users\\rj\\Documents\\Coding Projects\\Backend-Projects\\My Weather API\\request_data.py', reloading
-2025-11-06 17:24:44,963 - INFO -  * Restarting with stat
-2025-11-06 17:24:46,155 - WARNING -  * Debugger is active!
-2025-11-06 17:24:46,160 - INFO -  * Debugger PIN: 621-942-329
-2025-11-06 17:24:48,216 - INFO - https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Pandi, Philippines?key=UW9WGNEW2SEFDM82H8H48CELF
-2025-11-06 17:24:50,230 - INFO - cached: b'{"queryCost": 1, "latitude": "14.8657", "longitude": "120.958", "resolvedAddress": "Pandi, Central Luzon, Philippines", "address": "Pandi, Philippines", "timezone": "Asia/Manila", "tzoffset": "8.0"}'
-2025-11-06 17:24:50,231 - INFO - 127.0.0.1 - - [06/Nov/2025 17:24:50] "GET /weather HTTP/1.1" 200 -
-2025-11-06 17:25:03,683 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-11-06 17:25:03,683 - INFO - [33mPress CTRL+C to quit[0m
-2025-11-06 17:25:03,685 - INFO -  * Restarting with stat
-2025-11-06 17:25:04,375 - WARNING -  * Debugger is active!
-2025-11-06 17:25:04,378 - INFO -  * Debugger PIN: 621-942-329
-2025-11-06 17:25:15,714 - INFO - https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Pandi, Philippines?key=UW9WGNEW2SEFDM82H8H48CELF
-2025-11-06 17:25:17,748 - INFO - cached: b'{"queryCost": 1, "latitude": "14.8657", "longitude": "120.958", "resolvedAddress": "Pandi, Central Luzon, Philippines", "address": "Pandi, Philippines", "timezone": "Asia/Manila", "tzoffset": "8.0"}'
-2025-11-06 17:25:17,750 - INFO - 127.0.0.1 - - [06/Nov/2025 17:25:17] "GET /weather HTTP/1.1" 200 -
-2025-11-06 17:25:27,262 - INFO - 127.0.0.1 - - [06/Nov/2025 17:25:27] "[33mGET /weathr HTTP/1.1[0m" 404 -
-2025-11-06 17:25:50,929 - INFO - 127.0.0.1 - - [06/Nov/2025 17:25:50] "[33mGET /weather/iran HTTP/1.1[0m" 404 -
-2025-11-06 17:25:57,666 - INFO - 127.0.0.1 - - [06/Nov/2025 17:25:57] "[33mGET /weather/location=iran HTTP/1.1[0m" 404 -
-2025-11-06 17:26:04,858 - INFO - https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/iran?key=UW9WGNEW2SEFDM82H8H48CELF
-2025-11-06 17:26:04,859 - INFO - cached: None
-2025-11-06 17:26:04,863 - DEBUG - Starting new HTTPS connection (1): weather.visualcrossing.com:443
-2025-11-06 17:26:06,306 - DEBUG - https://weather.visualcrossing.com:443 "GET /VisualCrossingWebServices/rest/services/timeline/iran?key=UW9WGNEW2SEFDM82H8H48CELF HTTP/1.1" 400 79
-2025-11-06 17:26:06,307 - ERROR - Other Error: Expecting value: line 1 column 1 (char 0)
-2025-11-06 17:26:06,384 - INFO - 127.0.0.1 - - [06/Nov/2025 17:26:06] "[35m[1mGET /weather?location=iran HTTP/1.1[0m" 500 -
-2025-11-06 17:26:06,621 - INFO - 127.0.0.1 - - [06/Nov/2025 17:26:06] "GET /weather?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-2025-11-06 17:26:06,629 - INFO - 127.0.0.1 - - [06/Nov/2025 17:26:06] "GET /weather?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-2025-11-06 17:26:06,728 - INFO - 127.0.0.1 - - [06/Nov/2025 17:26:06] "GET /weather?__debugger__=yes&cmd=resource&f=console.png&s=zNcrjIEiC11k3cG425SO HTTP/1.1" 200 -
-2025-11-06 17:26:06,753 - INFO - 127.0.0.1 - - [06/Nov/2025 17:26:06] "GET /weather?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-2025-11-06 17:26:20,881 - INFO - https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Pandi, Philippines?key=UW9WGNEW2SEFDM82H8H48CELF
-2025-11-06 17:26:20,882 - INFO - cached: b'{"queryCost": 1, "latitude": "14.8657", "longitude": "120.958", "resolvedAddress": "Pandi, Central Luzon, Philippines", "address": "Pandi, Philippines", "timezone": "Asia/Manila", "tzoffset": "8.0"}'
-2025-11-06 17:26:20,883 - INFO - 127.0.0.1 - - [06/Nov/2025 17:26:20] "GET /weather HTTP/1.1" 200 -
-2025-11-06 17:26:27,835 - INFO - 127.0.0.1 - - [06/Nov/2025 17:26:27] "[33mGET /weather/location=Iran HTTP/1.1[0m" 404 -
-2025-11-06 17:26:32,349 - INFO - 127.0.0.1 - - [06/Nov/2025 17:26:32] "[33mGET /weather/location=Korea HTTP/1.1[0m" 404 -
-2025-11-06 17:26:36,568 - INFO - https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Korea?key=UW9WGNEW2SEFDM82H8H48CELF
-2025-11-06 17:26:36,570 - INFO - cached: b'{"queryCost": 1, "latitude": "25.9085", "longitude": "84.8993", "resolvedAddress": "Korea, Amnour, BR, India", "address": "Korea", "timezone": "Asia/Kolkata", "tzoffset": "5.5"}'
-2025-11-06 17:26:36,570 - INFO - 127.0.0.1 - - [06/Nov/2025 17:26:36] "GET /weather?location=Korea HTTP/1.1" 200 -
-2025-11-06 17:27:05,900 - INFO - https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Korea?key=UW9WGNEW2SEFDM82H8H48CELF
-2025-11-06 17:27:05,902 - INFO - cached: b'{"queryCost": 1, "latitude": "25.9085", "longitude": "84.8993", "resolvedAddress": "Korea, Amnour, BR, India", "address": "Korea", "timezone": "Asia/Kolkata", "tzoffset": "5.5"}'
-2025-11-06 17:27:05,904 - INFO - 127.0.0.1 - - [06/Nov/2025 17:27:05] "GET /weather?location=Korea HTTP/1.1" 200 -
-2025-11-06 17:27:08,393 - INFO - https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Korea?key=UW9WGNEW2SEFDM82H8H48CELF
-2025-11-06 17:27:08,394 - INFO - cached: b'{"queryCost": 1, "latitude": "25.9085", "longitude": "84.8993", "resolvedAddress": "Korea, Amnour, BR, India", "address": "Korea", "timezone": "Asia/Kolkata", "tzoffset": "5.5"}'
-2025-11-06 17:27:08,395 - INFO - 127.0.0.1 - - [06/Nov/2025 17:27:08] "GET /weather?location=Korea HTTP/1.1" 200 -
-2025-11-06 17:27:10,056 - INFO - https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Korea?key=UW9WGNEW2SEFDM82H8H48CELF
-2025-11-06 17:27:10,057 - INFO - cached: b'{"queryCost": 1, "latitude": "25.9085", "longitude": "84.8993", "resolvedAddress": "Korea, Amnour, BR, India", "address": "Korea", "timezone": "Asia/Kolkata", "tzoffset": "5.5"}'
-2025-11-06 17:27:10,058 - INFO - 127.0.0.1 - - [06/Nov/2025 17:27:10] "GET /weather?location=Korea HTTP/1.1" 200 -
-2025-11-06 17:27:10,526 - INFO - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: run
-2025-11-06 17:27:10,527 - WARNING - LIMIT REACHED: 429 Too Many Requests: 3 per 1 minute
-2025-11-06 17:27:10,606 - INFO - 127.0.0.1 - - [06/Nov/2025 17:27:10] "[35m[1mGET /weather?location=Korea HTTP/1.1[0m" 500 -
-2025-11-06 17:27:10,672 - INFO - 127.0.0.1 - - [06/Nov/2025 17:27:10] "[36mGET /weather?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-2025-11-06 17:27:10,672 - INFO - 127.0.0.1 - - [06/Nov/2025 17:27:10] "[36mGET /weather?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-2025-11-06 17:27:10,702 - INFO - 127.0.0.1 - - [06/Nov/2025 17:27:10] "[36mGET /weather?__debugger__=yes&cmd=resource&f=console.png&s=zNcrjIEiC11k3cG425SO HTTP/1.1[0m" 304 -
-2025-11-06 17:27:10,849 - INFO - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: run
-2025-11-06 17:27:10,850 - WARNING - LIMIT REACHED: 429 Too Many Requests: 3 per 1 minute
-2025-11-06 17:27:10,869 - INFO - 127.0.0.1 - - [06/Nov/2025 17:27:10] "[35m[1mGET /weather?location=Korea HTTP/1.1[0m" 500 -
-2025-11-06 17:27:10,938 - INFO - 127.0.0.1 - - [06/Nov/2025 17:27:10] "[36mGET /weather?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-2025-11-06 17:27:10,940 - INFO - 127.0.0.1 - - [06/Nov/2025 17:27:10] "[36mGET /weather?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-2025-11-06 17:27:10,963 - INFO - 127.0.0.1 - - [06/Nov/2025 17:27:10] "[36mGET /weather?__debugger__=yes&cmd=resource&f=console.png&s=zNcrjIEiC11k3cG425SO HTTP/1.1[0m" 304 -
-2025-11-06 17:27:10,996 - INFO - 127.0.0.1 - - [06/Nov/2025 17:27:10] "[36mGET /weather?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-2025-11-06 17:27:35,116 - INFO -  * Detected change in 'c:\\Users\\rj\\Documents\\Coding Projects\\Backend-Projects\\My Weather API\\app.py', reloading
-2025-11-06 17:27:35,223 - INFO -  * Restarting with stat
-2025-11-06 17:27:36,058 - WARNING -  * Debugger is active!
-2025-11-06 17:27:36,062 - INFO -  * Debugger PIN: 621-942-329
-2025-11-06 17:27:42,147 - INFO -  * Detected change in 'c:\\Users\\rj\\Documents\\Coding Projects\\Backend-Projects\\My Weather API\\app.py', reloading
-2025-11-06 17:27:42,256 - INFO -  * Restarting with stat
-2025-11-06 17:27:43,071 - WARNING -  * Debugger is active!
-2025-11-06 17:27:43,088 - INFO -  * Debugger PIN: 621-942-329
-2025-11-06 17:27:49,379 - INFO - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: run
-2025-11-06 17:27:49,379 - WARNING - LIMIT REACHED: 429 Too Many Requests: 3 per 1 minute
-2025-11-06 17:27:49,395 - INFO - 127.0.0.1 - - [06/Nov/2025 17:27:49] "[35m[1mGET /weather?location=Korea HTTP/1.1[0m" 500 -
-2025-11-06 17:27:49,570 - INFO - 127.0.0.1 - - [06/Nov/2025 17:27:49] "[36mGET /weather?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-2025-11-06 17:27:49,571 - INFO - 127.0.0.1 - - [06/Nov/2025 17:27:49] "[36mGET /weather?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-2025-11-06 17:27:49,606 - INFO - 127.0.0.1 - - [06/Nov/2025 17:27:49] "GET /weather?__debugger__=yes&cmd=resource&f=console.png&s=Dzs24g5uyQQccIJ7Ph66 HTTP/1.1" 200 -
-2025-11-06 17:27:49,645 - INFO - 127.0.0.1 - - [06/Nov/2025 17:27:49] "[36mGET /weather?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-2025-11-06 17:28:05,358 - INFO -  * Detected change in 'c:\\Users\\rj\\Documents\\Coding Projects\\Backend-Projects\\My Weather API\\app.py', reloading
-2025-11-06 17:28:05,459 - INFO -  * Restarting with stat
-2025-11-06 17:28:06,248 - WARNING -  * Debugger is active!
-2025-11-06 17:28:06,252 - INFO -  * Debugger PIN: 621-942-329
-2025-11-06 17:28:13,778 - INFO - https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Korea?key=UW9WGNEW2SEFDM82H8H48CELF
-2025-11-06 17:28:15,797 - INFO - cached: b'{"queryCost": 1, "latitude": "25.9085", "longitude": "84.8993", "resolvedAddress": "Korea, Amnour, BR, India", "address": "Korea", "timezone": "Asia/Kolkata", "tzoffset": "5.5"}'
-2025-11-06 17:28:15,799 - INFO - 127.0.0.1 - - [06/Nov/2025 17:28:15] "GET /weather?location=Korea HTTP/1.1" 200 -
-2025-11-06 17:28:17,163 - INFO - https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Korea?key=UW9WGNEW2SEFDM82H8H48CELF
-2025-11-06 17:28:17,164 - INFO - cached: b'{"queryCost": 1, "latitude": "25.9085", "longitude": "84.8993", "resolvedAddress": "Korea, Amnour, BR, India", "address": "Korea", "timezone": "Asia/Kolkata", "tzoffset": "5.5"}'
-2025-11-06 17:28:17,165 - INFO - 127.0.0.1 - - [06/Nov/2025 17:28:17] "GET /weather?location=Korea HTTP/1.1" 200 -
-2025-11-06 17:28:26,993 - INFO - https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Korea?key=UW9WGNEW2SEFDM82H8H48CELF
-2025-11-06 17:28:26,994 - INFO - cached: b'{"queryCost": 1, "latitude": "25.9085", "longitude": "84.8993", "resolvedAddress": "Korea, Amnour, BR, India", "address": "Korea", "timezone": "Asia/Kolkata", "tzoffset": "5.5"}'
-2025-11-06 17:28:26,995 - INFO - 127.0.0.1 - - [06/Nov/2025 17:28:26] "GET /weather?location=Korea HTTP/1.1" 200 -
-2025-11-06 17:28:29,136 - INFO - ratelimit 3 per 1 minute (127.0.0.1) exceeded at endpoint: run
-2025-11-06 17:28:29,160 - INFO - 127.0.0.1 - - [06/Nov/2025 17:28:29] "[35m[1mGET /weather?location=Korea HTTP/1.1[0m" 500 -
-2025-11-06 17:28:29,345 - INFO - 127.0.0.1 - - [06/Nov/2025 17:28:29] "[36mGET /weather?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-2025-11-06 17:28:29,350 - INFO - 127.0.0.1 - - [06/Nov/2025 17:28:29] "[36mGET /weather?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-2025-11-06 17:28:29,383 - INFO - 127.0.0.1 - - [06/Nov/2025 17:28:29] "GET /weather?__debugger__=yes&cmd=resource&f=console.png&s=wlhTUScAlj8FdIEyuPyH HTTP/1.1" 200 -
-2025-11-06 17:28:29,405 - INFO - 127.0.0.1 - - [06/Nov/2025 17:28:29] "[36mGET /weather?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-06 18:16:56,894 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-06 18:16:56,896 - INFO -  * Restarting with stat
+2025-11-06 18:16:57,627 - WARNING -  * Debugger is active!
+2025-11-06 18:16:57,631 - INFO -  * Debugger PIN: 621-942-329
+2025-11-06 18:17:00,587 - INFO - 127.0.0.1 - - [06/Nov/2025 18:17:00] "[33mGET / HTTP/1.1[0m" 404 -
+2025-11-06 18:17:12,257 - INFO - cached: None
+2025-11-06 18:17:12,259 - ERROR - Other Error: Failed to parse: <PreparedRequest [GET]>
+Traceback (most recent call last):
+  File "C:\Users\rj\Documents\Coding Projects\Backend-Projects\My Weather API\myenv\Lib\site-packages\urllib3\util\url.py", line 423, in parse_url
+    host, port = _HOST_PORT_RE.match(host_port).groups()  # type: ignore[union-attr]
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'groups'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\rj\Documents\Coding Projects\Backend-Projects\My Weather API\myenv\Lib\site-packages\requests\models.py", line 433, in prepare_url
+    scheme, auth, host, port, path, query, fragment = parse_url(url)
+                                                      ~~~~~~~~~^^^^^
+  File "C:\Users\rj\Documents\Coding Projects\Backend-Projects\My Weather API\myenv\Lib\site-packages\urllib3\util\url.py", line 449, in parse_url
+    raise LocationParseError(source_url) from e
+urllib3.exceptions.LocationParseError: Failed to parse: <PreparedRequest [GET]>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\rj\Documents\Coding Projects\Backend-Projects\My Weather API\request_data.py", line 26, in request_data
+    response1 = requests.get(prepared, timeout=5)
+  File "C:\Users\rj\Documents\Coding Projects\Backend-Projects\My Weather API\myenv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\rj\Documents\Coding Projects\Backend-Projects\My Weather API\myenv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rj\Documents\Coding Projects\Backend-Projects\My Weather API\myenv\Lib\site-packages\requests\sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+  File "C:\Users\rj\Documents\Coding Projects\Backend-Projects\My Weather API\myenv\Lib\site-packages\requests\sessions.py", line 484, in prepare_request
+    p.prepare(
+    ~~~~~~~~~^
+        method=request.method.upper(),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        hooks=merge_hooks(request.hooks, self.hooks),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\rj\Documents\Coding Projects\Backend-Projects\My Weather API\myenv\Lib\site-packages\requests\models.py", line 367, in prepare
+    self.prepare_url(url, params)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\rj\Documents\Coding Projects\Backend-Projects\My Weather API\myenv\Lib\site-packages\requests\models.py", line 435, in prepare_url
+    raise InvalidURL(*e.args)
+requests.exceptions.InvalidURL: Failed to parse: <PreparedRequest [GET]>
+2025-11-06 18:17:12,294 - INFO - 127.0.0.1 - - [06/Nov/2025 18:17:12] "[35m[1mGET /weather HTTP/1.1[0m" 500 -
+2025-11-06 18:17:12,486 - INFO - 127.0.0.1 - - [06/Nov/2025 18:17:12] "[36mGET /weather?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-06 18:17:12,495 - INFO - 127.0.0.1 - - [06/Nov/2025 18:17:12] "[36mGET /weather?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-06 18:17:12,576 - INFO - 127.0.0.1 - - [06/Nov/2025 18:17:12] "GET /weather?__debugger__=yes&cmd=resource&f=console.png&s=0PBIUvGAx0eWRnK93R8t HTTP/1.1" 200 -
+2025-11-06 18:18:19,563 - INFO -  * Detected change in 'c:\\Users\\rj\\Documents\\Coding Projects\\Backend-Projects\\My Weather API\\request_data.py', reloading
+2025-11-06 18:18:19,678 - INFO -  * Restarting with stat
+2025-11-06 18:18:20,545 - WARNING -  * Debugger is active!
+2025-11-06 18:18:20,548 - INFO -  * Debugger PIN: 621-942-329
+2025-11-06 18:18:48,880 - INFO -  * Detected change in 'c:\\Users\\rj\\Documents\\Coding Projects\\Backend-Projects\\My Weather API\\request_data.py', reloading
+2025-11-06 18:18:49,002 - INFO -  * Restarting with stat
+2025-11-06 18:18:49,590 - WARNING -  * Debugger is active!
+2025-11-06 18:18:49,594 - INFO -  * Debugger PIN: 621-942-329
+2025-11-06 18:20:10,540 - INFO -  * Detected change in 'c:\\Users\\rj\\Documents\\Coding Projects\\Backend-Projects\\My Weather API\\request_data.py', reloading
+2025-11-06 18:20:10,635 - INFO -  * Restarting with stat
+2025-11-06 18:20:11,603 - WARNING -  * Debugger is active!
+2025-11-06 18:20:11,608 - INFO -  * Debugger PIN: 621-942-329
+2025-11-06 18:20:36,866 - INFO -  * Detected change in 'c:\\Users\\rj\\Documents\\Coding Projects\\Backend-Projects\\My Weather API\\request_data.py', reloading
+2025-11-06 18:20:36,992 - INFO -  * Restarting with stat
+2025-11-06 18:20:37,828 - WARNING -  * Debugger is active!
+2025-11-06 18:20:37,831 - INFO -  * Debugger PIN: 621-942-329
+2025-11-06 18:21:17,241 - INFO -  * Detected change in 'c:\\Users\\rj\\Documents\\Coding Projects\\Backend-Projects\\My Weather API\\request_data.py', reloading
+2025-11-06 18:21:17,359 - INFO -  * Restarting with stat
+2025-11-06 18:21:18,415 - WARNING -  * Debugger is active!
+2025-11-06 18:21:18,422 - INFO -  * Debugger PIN: 621-942-329
+2025-11-06 18:21:28,456 - INFO - key: https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Pandi,%20Philippines?key=UW9WGNEW2SEFDM82H8H48CELF
+2025-11-06 18:21:28,461 - DEBUG - Starting new HTTPS connection (1): weather.visualcrossing.com:443
+2025-11-06 18:21:29,894 - DEBUG - https://weather.visualcrossing.com:443 "GET /VisualCrossingWebServices/rest/services/timeline/Pandi,%20Philippines?key=UW9WGNEW2SEFDM82H8H48CELF HTTP/1.1" 200 None
+2025-11-06 18:21:30,124 - INFO - succesfully saved in cache
+2025-11-06 18:21:30,126 - INFO - 127.0.0.1 - - [06/Nov/2025 18:21:30] "GET /weather HTTP/1.1" 200 -
+2025-11-06 18:22:08,000 - INFO -  * Detected change in 'c:\\Users\\rj\\Documents\\Coding Projects\\Backend-Projects\\My Weather API\\request_data.py', reloading
+2025-11-06 18:22:08,103 - INFO -  * Restarting with stat
+2025-11-06 18:22:08,982 - WARNING -  * Debugger is active!
+2025-11-06 18:22:08,985 - INFO -  * Debugger PIN: 621-942-329

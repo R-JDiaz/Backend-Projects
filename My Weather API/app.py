@@ -4,6 +4,8 @@ from flask import Flask, jsonify, request
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 from logger import setup_logger
+from urllib.parse import quote
+
 app = Flask(__name__)
 
 limiter = Limiter(
