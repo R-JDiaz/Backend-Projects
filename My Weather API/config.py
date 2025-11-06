@@ -10,6 +10,6 @@ class Config():
     redis_port = 6379
     redis_db = 0
     request_limit = 5
-    location = "Pandi, Philippines"
+    location = os.getenv('LOCATION')
     log_file = "app.log"
     log_type = logging.DEBUG if os.getenv("FLASK_ENV") == "development" else logging.INFO

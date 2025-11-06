@@ -38,7 +38,7 @@ def request_data(location, date1=None, date2=None):
             logger.error(f"API takes too long {e}")
             raise
         except requests.exceptions.HTTPError as httpError:
-            logger.error(f"HTTP ERROR: {httpError}")
+            logger.error(f"HTTP ERROR occurred while fetching weather data", exc_info=True)
             raise
         except Exception as error:
             logger.error(f"Other Error: {error}", exc_info=True)
