@@ -11,16 +11,17 @@ IN ORDER TO GET THE NEED DATA YOU HAVE TO ACCESS THE DICTIONARY INSIDE THE DAYS,
 
 2.[x] enhance the caching, use exp
 
-3.[] implement api limiting 
+3.[x] implement api limiting 
 
 3.a [x] learn how to deploy in flask
 
 3.b [] learn why the flask not getting the locaion value, does it require it to show in url
 
 4. [] understand how to add the response's data uin url like location and date
+
 4.b [] understand how the url is connected in the data that were getting
 
-5. [] understand how logger works
+5. [x] understand how logger works
 
 problems:
 1.[x] unable to check what kind of error
