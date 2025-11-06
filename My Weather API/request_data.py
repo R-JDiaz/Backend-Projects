@@ -4,6 +4,9 @@ import cache
 from format import format_data
 import json
 import traceback
+import logging 
+
+logger = logging.getLogger(__name__)
 
 def request_data(location, date1=None, date2=None):
     if date1 and date2:
@@ -12,24 +15,23 @@ def request_data(location, date1=None, date2=None):
         url = f"{Config.API_BASE_URL}/{location}/{date1}?key={Config.WEATHER_API_KEY}"
     else:
         url = f"{Config.API_BASE_URL}/{location}?key={Config.WEATHER_API_KEY}"
-        print(url)
+        logger.info(url)
 
     
     cached_data = cache.get_cache(url)
-    print("cached: " , cached_data)
+    logger.info(f"cached: {cached_data}")
     if cached_data is None:
         try:
             response = format_data(requests.get(url).json())
-            print(cache.set_cache(url, json.dumps(response)))
-            print(url)
-            print("DATA FROM API SERVER")
+            logger.info(str(cache.set_cache(url, json.dumps(response))))
             return response
             
         except requests.exceptions.HTTPError as httpError:
-            print(f"HTTP ERROR: {httpError}")
+            logger.error(f"HTTP ERROR: {httpError}")
+            raise
         except Exception as error:
-            print(f"Error: {error}")
-            traceback.print_exc()
+            logger.error(f"Other Error: {error}")
+            raise
     else:
         if isinstance(cached_data, bytes):
             cached_data = cached_data.decode("utf-8")

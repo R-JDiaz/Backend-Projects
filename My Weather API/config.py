@@ -1,5 +1,6 @@
 import os
 from dotenv import load_dotenv
+import logging
 
 load_dotenv()
 class Config():
@@ -10,3 +11,5 @@ class Config():
     redis_db = 0
     request_limit = 5
     location = "Pandi, Philippines"
+    log_file = "app.log"
+    log_type = logging.DEBUG if os.getenv("FLASK_ENV") == "development" else logging.INFO
