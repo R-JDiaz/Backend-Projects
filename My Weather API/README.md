@@ -13,9 +13,14 @@ IN ORDER TO GET THE NEED DATA YOU HAVE TO ACCESS THE DICTIONARY INSIDE THE DAYS,
 
 3.[] implement api limiting 
 
-3.a [] learn how to deploy in flask
+3.a [x] learn how to deploy in flask
+
+3.b [] learn why the flask not getting the locaion value, does it require it to show in url
+
+4. [] understand how to add the response's data uin url like location and date
 
 problems:
 1.[x] unable to check what kind of error
 SOLUTION: 
 USE TRACEBACK
+asdasd
