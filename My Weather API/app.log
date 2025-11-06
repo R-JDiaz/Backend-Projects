@@ -85,3 +85,32 @@ requests.exceptions.InvalidURL: Failed to parse: <PreparedRequest [GET]>
 2025-11-06 18:22:08,103 - INFO -  * Restarting with stat
 2025-11-06 18:22:08,982 - WARNING -  * Debugger is active!
 2025-11-06 18:22:08,985 - INFO -  * Debugger PIN: 621-942-329
+2025-11-06 18:30:34,558 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-06 18:30:34,558 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-06 18:30:34,561 - INFO -  * Restarting with stat
+2025-11-06 18:30:35,311 - WARNING -  * Debugger is active!
+2025-11-06 18:30:35,317 - INFO -  * Debugger PIN: 621-942-329
+2025-11-06 18:30:37,164 - INFO - 127.0.0.1 - - [06/Nov/2025 18:30:37] "[33mGET / HTTP/1.1[0m" 404 -
+2025-11-06 18:30:40,822 - INFO - 127.0.0.1 - - [06/Nov/2025 18:30:40] "[33mGET / HTTP/1.1[0m" 404 -
+2025-11-06 18:30:50,007 - DEBUG - Starting new HTTPS connection (1): weather.visualcrossing.com:443
+2025-11-06 18:30:51,659 - DEBUG - https://weather.visualcrossing.com:443 "GET /VisualCrossingWebServices/rest/services/timeline/Pandi,%20Philippines?key=UW9WGNEW2SEFDM82H8H48CELF HTTP/1.1" 200 None
+2025-11-06 18:30:51,665 - INFO - succesfully saved in cache
+2025-11-06 18:30:51,666 - INFO - 127.0.0.1 - - [06/Nov/2025 18:30:51] "GET /weather HTTP/1.1" 200 -
+2025-11-06 18:31:03,726 - INFO -  * Detected change in 'c:\\Users\\rj\\Documents\\Coding Projects\\Backend-Projects\\My Weather API\\request_data.py', reloading
+2025-11-06 18:31:03,852 - INFO -  * Restarting with stat
+2025-11-06 18:31:04,575 - WARNING -  * Debugger is active!
+2025-11-06 18:31:04,579 - INFO -  * Debugger PIN: 621-942-329
+2025-11-06 18:31:11,441 - INFO - data from cache
+2025-11-06 18:31:11,442 - INFO - 127.0.0.1 - - [06/Nov/2025 18:31:11] "GET /weather HTTP/1.1" 200 -
+2025-11-06 18:31:31,889 - INFO -  * Detected change in 'c:\\Users\\rj\\Documents\\Coding Projects\\Backend-Projects\\My Weather API\\request_data.py', reloading
+2025-11-06 18:31:32,046 - INFO -  * Restarting with stat
+2025-11-06 18:31:33,076 - WARNING -  * Debugger is active!
+2025-11-06 18:31:33,079 - INFO -  * Debugger PIN: 621-942-329
+2025-11-06 18:31:35,127 - INFO - https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Pandi, Philippines?
+2025-11-06 18:31:37,162 - INFO - data from cache
+2025-11-06 18:31:37,163 - INFO - 127.0.0.1 - - [06/Nov/2025 18:31:37] "GET /weather HTTP/1.1" 200 -
+2025-11-06 18:31:41,200 - INFO -  * Detected change in 'c:\\Users\\rj\\Documents\\Coding Projects\\Backend-Projects\\My Weather API\\request_data.py', reloading
+2025-11-06 18:31:41,324 - INFO -  * Restarting with stat
+2025-11-06 18:31:42,096 - WARNING -  * Debugger is active!
+2025-11-06 18:31:42,101 - INFO -  * Debugger PIN: 621-942-329

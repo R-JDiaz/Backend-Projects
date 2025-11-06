@@ -4,8 +4,14 @@ import cache
 from format import format_data
 import json
 import logging 
+from urllib.parse import urlencode
 
 logger = logging.getLogger(__name__)
+
+def setup_cachekey(url, params):
+    cache_params= {k: v for k, v in params.items() if k != "key"}
+    cache_key = f"{url}?{urlencode(cache_params)}"
+    return cache_key
 
 def request_data(location, date1=None, date2=None):
     url=f"{Config.API_BASE_URL}/{location}"
@@ -16,17 +22,16 @@ def request_data(location, date1=None, date2=None):
     elif date1:
         params["date1"] = date1
     
-    req = requests.Request('GET', url, params=params)
-    prepared = req.prepare()
-    full_url = prepared.url
 
-    cached_data = cache.get_cache(full_url)
+    key = setup_cachekey(url, params)
+    logger.info(key)
+    cached_data = cache.get_cache(key)
     if cached_data is None:
         try:
-            response1 = requests.get(full_url, timeout=5)
+            response1 = requests.get(url, params=params, timeout=5)
             response1.raise_for_status()
             response = format_data(response1.json())
-            logger.info(str(cache.set_cache(full_url, json.dumps(response))))
+            logger.info(str(cache.set_cache(key, json.dumps(response))))
             return response
         
         except requests.exceptions.Timeout as e:
